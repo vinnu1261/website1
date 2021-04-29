@@ -1,0 +1,83 @@
+#nav-bar
+{
+    background-image: url("images/Header.png");
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand img
+{
+    height: 100px;
+    padding-left: 0px;
+}
+.navbar-nav li
+{
+    padding: 0 17px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a::after
+{
+     color: #dd3333!important;
+}
+.navbar-toggler
+{
+    border:  none!important;
+    color: #dd3333 !important;
+    
+}
+.nav-link
+{
+    color:white !important;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+  }
+  #nav-bar ul li a:hover
+{
+     color: #dd3333!important;
+}
+/*--------photo--------*/
+#services
+{
+    background-image: linear-gradient(rgba(17, 17, 17, 0.829),rgba(17,17,17,0.829)),url("images/customers.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #dd3333!important;
+    background-attachment: fixed;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#services h1
+{
+    text-align: center ;
+    color: #dd3333!important;
+    padding-bottom: 10px;
+    padding-top: 100px;
+}
+.btn-change1{
+    height: 60px;
+    width: 200px;
+    background: #dd3333;
+    margin: 20px;
+    float: center;
+    border: 0px;
+    color: #fff;
+    box-shadow: 0 0 1px #ccc;
+    transition-duration: 0.5s;
+    font-size: 22px;
+    font-weight: 500;
+}
+.btn-change1:hover{
+  box-shadow: 0px 0px 80px 10px #ffff inset , 0px 0px 80px 10px #ffff inset;
+  transform: scale(1.1);
+  background: #fff;
+  color: #dd3333;
+}
