@@ -21,6 +21,7 @@ function choosePic() {
     var randomNum = Math.floor(Math.random() * myPix.length);
     document.getElementById('myPicture').src = myPix[randomNum];
     choosePic1();
+  checkBrowser();
 }
 function choosePic1() {
     var randomNum = Math.floor(Math.random() * myPix2.length);
@@ -119,4 +120,30 @@ function choosePic19() {
 function choosePic20() {
     var randomNum = Math.floor(Math.random() * myPix7.length);
     document.getElementById('myPicture20').src = myPix7[randomNum];
+}
+function checkBrowser()
+{
+    let userAgentString =
+    navigator.userAgent;
+let IExplorerAgent =
+				userAgentString.indexOf("MSIE") > -1 ||
+				userAgentString.indexOf("rv:") > -1;
+let chromeAgent =
+				userAgentString.indexOf("Chrome") > -1;
+if (IExplorerAgent){
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("carousel-item");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+}
 }
