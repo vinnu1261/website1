@@ -67,10 +67,29 @@
           <h2 style="font-family: Lexend; color:white; font-size: 20px; font-weight: bold; line-height: 1.6; font-size: 25px;">Name Of Proprietor: K.V.KRISHNARAO<br>
             TEL: 040-23774680<br>Cell No: +91-9866012632 / +91-9866124462
 <br>Email: <a href="mailto: kbrengineering@yahoo.com" style="color:darkcyan; font-size: 22px;">kbrengineering@yahoo.com</a><br>
-<a class="about" rel='' href="message1.html"><button type="button" class="btn-change1" style="font-weight: bolder;" >Leave A Message</button></a>
+<a class="about" rel='' onclick="myFunction()"><button type="button" class="btn-change1" style="font-weight: bolder;" >Leave A Message</button></a>
 
             </h2>
         </div>
       </div>
     </div>
   </section>
+   <script>
+  let userAgentString =
+    navigator.userAgent;
+let IExplorerAgent =
+				userAgentString.indexOf("MSIE") > -1 ||
+				userAgentString.indexOf("rv:") > -1;
+let chromeAgent =
+				userAgentString.indexOf("Chrome") > -1;
+if (IExplorerAgent){
+  function myFunction() {
+  location.replace("mailto: kbrengineering@yahoo.com")
+}
+}
+else{
+  function myFunction(){
+  location.replace("https://kbrengineering.netlify.app/message1.html")
+  }
+}
+</script>
